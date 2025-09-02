@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TheNewSillyGoose's Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <style>
+        html,
+        body,
+        pre,
+        code,
+        kbd,
+        samp {
+            font-family: "Press Start 2P";
+        }
+    </style>
+</head>
+
+<body style="background-image: url(background.png);">
+    <div class="nes-container is-centered" style="height: 80%; width: 80%; margin: 10%; background-color: white;">
+        <h2>TheNewSillyGoose</h2><br>
+        <hr><br>
+        <a href="https://youtube.com/@newsillygoose" class="nes-btn">YouTube</a><br><br>
+        <a href="https://www.tiktok.com/@thenewsillygoose" class="nes-btn">TikTok</a><br><br>
+        <a href="https://www.instagram.com/sillly.goooooose" class="nes-btn">Instagram</a><br><br>
+        <hr><br>
+        <span class="nes-text" id="splash">? ? ?</span>
+    </div>
+</body>
+
+<script>
+    function getRandomItem(arr) {
+        return arr[Math.floor(Math.random() * arr.length)];
+    }
+
+    let splashText = document.getElementById("splash");
+    let splashes = ["I see you", "Shh it's my secret", "Fine i'll tell you...", "I ate the last gummy bear", "❤️", "like and subscribe for more epic videos", "HTML & JS made by Spheroidon", "CSS framework used: NES.css", "Font used: Press Start 2P"];
+    splashText.innerText = getRandomItem(splashes);
+</script>
+
+</html>
